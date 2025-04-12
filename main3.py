@@ -2,7 +2,6 @@
 
 import streamlit as st
 import os
-from dotenv import load_dotenv
 from groq import Groq
 
 
@@ -11,9 +10,7 @@ from groq import Groq
 st.set_page_config(page_title="GPT do Michel (Groq)", page_icon="🧠")
 
 # Inicialização do cliente Groq
-load_dotenv()  # <== isso deve vir antes do os.getenv
-groq_api_key = os.getenv("GROQ_API_KEY")
-client = Groq(api_key=groq_api_key)
+client = Groq(api_key="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")
 
 # ---------- ABA LATERAL ----------
 st.sidebar.title("⚙️ Opções")
